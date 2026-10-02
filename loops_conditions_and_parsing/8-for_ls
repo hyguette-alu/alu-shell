@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Displays content of current directory with names stripped before the first dash
+for file in *; do
+  echo "$file" | cut -d'-' -f2-
+done
